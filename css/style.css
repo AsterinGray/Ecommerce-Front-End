@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-cart{
+    margin-left: auto;
+}
+
+.navbar-cart a{
+    color: white;
+}
+
+.navbar-cart>a>img{
+    width: 1.5rem;
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+    }
+}
