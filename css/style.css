@@ -57,8 +57,67 @@ html, body{
     filter: invert(1);
 }
 
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F253D;
+    height: 90vh;
+    padding: 0 5rem;
+    color: white;
+}
+
+.landing>img{
+    width: 50%;
+}
+
+.landing-content{
+    width: 50%;
+}
+
+.landing-content>p:first-child{
+    font: 3.5rem GothamBold;
+    margin: 0;
+}
+
+.landing-content>p:nth-child(2){
+    font: 1.5rem GothamLight;
+}
+
+.landing-content>a{
+    color: white;
+    text-decoration: none;
+}
+
+.landing-content-button{
+    background-color: #ECB28B;
+    border-radius: 50px;
+    width: fit-content;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+
 @media only screen and (max-width: 768px){
     .navbar{
         padding: 0 1rem;
+    }
+
+    .landing{
+        padding: 0 1rem;
+    }
+    
+    .landing>img{
+        display: none;
+    }
+
+    .landing-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing-content>a{
+        display: flex;
+        justify-content: center;
     }
 }
