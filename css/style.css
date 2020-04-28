@@ -45,15 +45,16 @@ html, body{
     color: white;
 }
 
-.navbar-cart{
+.navbar-button{
     margin-left: auto;
 }
 
-.navbar-cart a{
+.navbar-button a{
+    padding: 1rem;
     color: white;
 }
 
-.navbar-cart>a>img{
+.navbar-button>a>img{
     width: 1.5rem;
     filter: invert(1);
 }
@@ -115,8 +116,18 @@ label[for="hamburger"], #hamburger{
         color:white;
     }
     
-    .navbar-cart{
+    .navbar-button{
         margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>span{
+        display: none;
     }
 
     .navbar input:checked ~ .navbar-link{
