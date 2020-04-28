@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -57,6 +58,11 @@ html, body{
     filter: invert(1);
 }
 
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
 .landing{
     display: flex;
     justify-content: center;
@@ -101,6 +107,50 @@ html, body{
 @media only screen and (max-width: 768px){
     .navbar{
         padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+    
+    .navbar-cart{
+        margin: 0;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
     }
 
     .landing{
@@ -116,8 +166,17 @@ html, body{
         text-align: center;
     }
 
+    .landing-content>p:nth-child(2){
+        margin: 0;
+    }
+
     .landing-content>a{
         display: flex;
+        margin-top: 5rem;
         justify-content: center;
+    }
+
+    .landing-content-button{
+        margin: 0;
     }
 }
