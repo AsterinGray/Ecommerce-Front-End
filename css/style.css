@@ -104,6 +104,42 @@ label[for="hamburger"], #hamburger{
     margin: 2rem 0;
 }
 
+.quality {
+    background-color: #FCF7F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    color: #1F253D;
+}
+
+.quality p:first-child {
+    font: 3.5rem GothamBold;
+    margin: 0;
+}
+
+.quality p:nth-child(2) {
+    width: 60%;
+    text-align: center;
+    font: 1.5rem GothamLight;
+}
+
+.quality a{
+    text-decoration: none;
+    background-color: #ECB28B;
+    border-radius: 50px;
+    color: white;
+    font: 2rem GothamLight;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    align-self: center;
+}
+
+.quality>img{
+    width: 60%;
+}
+
 @media only screen and (max-width: 768px){
     .navbar{
         padding: 0 1rem;
@@ -178,5 +214,18 @@ label[for="hamburger"], #hamburger{
 
     .landing-content-button{
         margin: 0;
+    }
+    
+    .quality{
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .quality p:nth-child(2){
+        width: 100%;
+    }
+
+    .quality img{
+        width: 100%;
     }
 }
