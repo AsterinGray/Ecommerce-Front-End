@@ -255,6 +255,44 @@ label[for="hamburger"], #hamburger{
     font-size: 2rem;
 }
 
+footer{
+    background-color: #1F253D;
+    padding: 2rem 5rem;
+}
+
+footer>span{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content>span:first-child{
+    font: 3rem GothamBold;
+    color: #ECB28B;
+}
+
+.footer-content>span:nth-child(2){
+    font: GothamLight;
+    text-align: right;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p:first-child{
+    font: 1.2rem GothamBold;
+}
+
+.footer-content>span:nth-child(2)>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p>a:hover{
+    color: #ECB28B;
+}
+
 @media only screen and (max-width: 768px){
     .navbar{
         padding: 0 1rem;
@@ -408,5 +446,9 @@ label[for="hamburger"], #hamburger{
 
     .customer-carousel-item-text{
         text-align: left;
+    }
+
+    footer{
+        padding: 2rem 1rem;
     }
 }
