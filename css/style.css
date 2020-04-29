@@ -117,6 +117,7 @@ label[for="hamburger"], #hamburger{
 .quality p:first-child {
     font: 3.5rem GothamBold;
     margin: 0;
+
 }
 
 .quality p:nth-child(2) {
@@ -138,6 +139,65 @@ label[for="hamburger"], #hamburger{
 
 .quality>img{
     width: 60%;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer>h1{
+    font: 3.5rem GothamBold;
+}
+
+.customer-carousel{
+    width: 50%;
+}
+
+.customer-carousel-item{
+    background-color: #E7D4C9;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.customer-carousel-item-profile{
+    display: flex;
+    align-items: center;
+}
+
+.customer-carousel-item-profile>img{
+    width: 5rem;
+}
+
+.customer-carousel-item-profile>p{
+    font: 1.5rem GothamBold;
+    padding: 0 1rem;
+}
+
+.customer-carousel-item-text{
+    margin: 1rem 0;
+}
+
+.customer-carousel-item-text>p:first-child{
+    font: 1.2rem GothamBold;
+    margin: 0;
+}
+
+.customer-carousel-item-text>p:nth-child(2){
+    font: 1.2rem GothamLight;
+    margin: 0;
+}
+
+.slick-prev.slick-arrow{
+    margin: 0 -1rem;
+}
+
+.slick-arrow:before{
+    color: #ECB28B;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 768px){
@@ -227,5 +287,26 @@ label[for="hamburger"], #hamburger{
 
     .quality img{
         width: 100%;
+    }
+
+    .customer{
+        padding: 0 3rem;
+        text-align: center;
+    }
+
+    .customer-carousel{
+        width: 100%;
+    }
+
+    .customer-carousel-item-profile{
+        text-align: left;
+    }
+
+    .customer-carousel-item-profile>img{
+        width: 3rem;
+    }
+
+    .customer-carousel-item-text{
+        text-align: left;
     }
 }
