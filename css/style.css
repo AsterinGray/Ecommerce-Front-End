@@ -104,46 +104,6 @@ label[for="hamburger"], #hamburger{
     margin: 2rem 0;
 }
 
-.quality {
-    background-color: #FCF7F4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    padding: 0 5rem;
-    color: #1F253D;
-}
-
-.quality-head {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    
-    margin-left: 15vw;
-    margin-right: 15vw;
-}
-
-.quality-head p:first-child {
-    font: 3.5rem GothamBold;
-    margin: 0;
-}
-
-.quality-head p:nth-child(2) {
-    font: 1.5rem GothamLight;
-}
-
-.quality-head .quality-button {
-    background-color: #ECB28B;
-    border-radius: 50px;
-    width: fit-content;
-    color: white;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    margin: 2rem 0;
-    align-self: center;
-}
-
 @media only screen and (max-width: 768px){
     .navbar{
         padding: 0 1rem;
@@ -219,14 +179,4 @@ label[for="hamburger"], #hamburger{
     .landing-content-button{
         margin: 0;
     }
-
-    .quality-head {
-        width: 100%;
-        text-align: center;
-    }
-
-    .quality-button {
-        margin: 0;
-    }
-
 }
