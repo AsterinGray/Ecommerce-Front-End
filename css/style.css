@@ -55,7 +55,7 @@ html, body{
 
 .navbar-cart>a>img{
     width: 1.5rem;
-    filter: invert(1);
+    filter: brightness(0) invert(1);
 }
 
 label[for="hamburger"], #hamburger{
