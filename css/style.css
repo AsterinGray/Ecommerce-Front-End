@@ -109,39 +109,35 @@ label[for="hamburger"], #hamburger{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    padding: 0 5rem;
+    flex-direction: column;
+    padding: 3rem 5rem;
     color: #1F253D;
 }
 
-.quality-head {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    
-    margin-left: 15vw;
-    margin-right: 15vw;
-}
-
-.quality-head p:first-child {
+.quality p:first-child {
     font: 3.5rem GothamBold;
     margin: 0;
 }
 
-.quality-head p:nth-child(2) {
+.quality p:nth-child(2) {
+    width: 60%;
+    text-align: center;
     font: 1.5rem GothamLight;
 }
 
-.quality-head .quality-button {
+.quality a{
+    text-decoration: none;
     background-color: #ECB28B;
     border-radius: 50px;
-    width: fit-content;
     color: white;
-    font-size: 2rem;
+    font: 2rem GothamLight;
     padding: 1rem 2rem;
     margin: 2rem 0;
     align-self: center;
+}
+
+.quality>img{
+    width: 60%;
 }
 
 @media only screen and (max-width: 768px){
@@ -220,14 +216,17 @@ label[for="hamburger"], #hamburger{
         margin: 0;
     }
 
-    .quality-head {
-        width: 100%;
+    .quality{
         text-align: center;
+        padding: 3rem 1rem;
     }
 
-    .quality-button {
-        margin: 0;
+    .quality p:nth-child(2){
+        width: 100%;
     }
 
+    .quality img{
+        width: 100%;
+    }
 }
 
