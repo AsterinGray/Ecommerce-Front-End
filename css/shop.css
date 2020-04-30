@@ -1,0 +1,294 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+
+.navbar-button{
+    margin-left: auto;
+}
+
+.navbar-button a{
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-button>a>img{
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description>h1{
+    font: 3.5rem GothamBold;
+    margin-bottom: 1rem;
+}
+
+.description>p:nth-child(2){
+    font: 2.2rem GothamLight bold;
+    margin: 0;
+}
+
+.description>p:nth-child(3){
+    font: 1.3rem GothamLight;
+    width: 60%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.product>h1{
+    font: 3rem GothamBold;
+}
+
+.product-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-layout-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.product-layout-card>img{
+    align-self: center;
+    width: 20rem;
+}
+
+.product-layout-card>h2{
+    margin: 0;
+    margin-bottom: .5rem;
+    font: 1.8rem GothamLight;
+}
+
+.product-layout-card>p{
+    margin: 0;
+    font: 1rem GothamLight;
+}
+
+.product-layout-card-button{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    width: 80%;
+    background-color: #ECB28B;
+    color: white;
+    font: 1.3rem GothamLight;
+    text-decoration: none;
+    text-align: center;
+}
+
+.product-layout-card-button>div:nth-child(2){
+    display: none;
+}
+
+.product-layout-card-button:hover.product-layout-card-button>div:nth-child(1){
+    display: none;
+}
+
+.product-layout-card-button:hover.product-layout-card-button>div:nth-child(2){
+    display: block;
+}
+
+.conclusion{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    background-color: #ECB28B;
+    color: white;
+    margin-top: 5rem;
+}
+
+.conclusion>h1{
+    font: 3rem GothamBold;
+    margin: 0;
+}
+
+.conclusion>p{
+    font: 1.5rem GothamLight;
+}
+
+footer{
+    background-color: #1F253D;
+    padding: 2rem 5rem;
+}
+
+footer>span{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content>span:first-child{
+    font: 3rem GothamBold;
+    color: #ECB28B;
+}
+
+.footer-content>span:nth-child(2){
+    font: GothamLight;
+    text-align: right;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p:first-child{
+    font: 1.2rem GothamBold;
+}
+
+.footer-content>span:nth-child(2)>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p>a:hover{
+    color: #ECB28B;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+        font-size: 2rem;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+
+    .navbar-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>img{
+        width: 2rem;
+    }
+
+    .navbar-button>a>span{
+        display: none;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
+    }
+
+    .product, .conclusion{
+        padding: 3rem 1rem;
+    }
+
+    .product-layout-card{
+        width: 30%;
+    }
+
+    footer{
+        padding: 2rem 1rem;
+    }
+}
