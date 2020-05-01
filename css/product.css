@@ -350,6 +350,9 @@ footer>span{
         margin: 0 2rem;
     }
 
+    .product-top-right .qty {
+        margin-top: 3rem;
+    }
     .product-top-right .button {
         margin: 0;
         width: 70%;
