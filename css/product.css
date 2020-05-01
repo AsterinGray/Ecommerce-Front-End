@@ -67,20 +67,21 @@ label[for="hamburger"], #hamburger{
 
 .product-top {
     display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
+    justify-content: center;
+    margin: 1rem;
     width: 100%;
 }
 
 .product-top>img {
-    width: 40%;
+    margin: 2rem;
+    width: 50%;
     box-shadow: 0 0 20px gainsboro;
 }
 
 .product-top-right {
-    width: 40%;
+    width: 30%;
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -103,10 +104,10 @@ label[for="hamburger"], #hamburger{
 .product-top-right .qty {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-self: center;
+    justify-content: center;
     text-decoration: none;
     color: #1F253D;
+    width: 100%;
 }
 .product-top-right .qty>div:first-child {
     overflow: hidden;
@@ -118,8 +119,9 @@ label[for="hamburger"], #hamburger{
 .product-top-right .qty>div:nth-child(2) {
     overflow: hidden;
     box-shadow: 0 0 20px gainsboro;
-    padding: 1rem 8rem;
+    padding: 1rem 5rem;
     font: 1rem GothamBold;
+    width: 20%;
 }
 
 .product-top-right .har{
@@ -207,8 +209,8 @@ label[for="hamburger"], #hamburger{
    display: flex;
    flex-direction: column;
    background-color: #FDF7F3;
-   width: 90%;
-   margin: 0 7rem;
+   width: 80%;
+   margin: 0 6rem;
 }
 
 .review-content .content>h3 {
@@ -351,8 +353,17 @@ footer>span{
     }
 
     .product-top-right .qty {
+        align-self: center;
+        justify-content: center;
         margin-top: 3rem;
+        width: 90%;
     }
+
+    .product-top-right .qty>div:nth-child(2) {
+        margin: 0;
+        width: 50%;
+    }
+
     .product-top-right .button {
         margin: 0;
         width: 70%;
@@ -364,6 +375,7 @@ footer>span{
 
     .review-content {
         margin: 0;
+        ali
         width: 100%;
     }
 
@@ -377,7 +389,7 @@ footer>span{
     }
     .review-content .content {
         width: 90%;
-        margin: 0 4rem;
+        margin: 0 3rem;
     }
        footer{
         padding: 2rem 1rem;
