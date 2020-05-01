@@ -1,0 +1,382 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+
+.navbar-button{
+    margin-left: auto;
+}
+
+.navbar-button a{
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-button>a>img{
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+.product-top {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.product-top>img {
+    width: 40%;
+    box-shadow: 0 0 20px gainsboro;
+}
+
+.product-top-right {
+    width: 40%;
+    text-align: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.product-top-right>p:first-child {
+    margin-bottom: 2rem;
+    font: 3rem GothamBold;
+}
+
+.product-top-right>p:nth-child(2) {
+    margin-bottom: 2rem;
+    font: 1.5rem GothamLight;
+}
+
+.product-top-right .har {
+    font: 2.5rem GothamLight;
+    text-align: left;
+}
+
+.product-top-right .qty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    text-decoration: none;
+    color: #1F253D;
+}
+.product-top-right .qty>div:first-child {
+    overflow: hidden;
+    background-color: #ECB28B;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamBold;
+}
+
+.product-top-right .qty>div:nth-child(2) {
+    overflow: hidden;
+    box-shadow: 0 0 20px gainsboro;
+    padding: 1rem 8rem;
+    font: 1rem GothamBold;
+}
+
+.product-top-right .har{
+    font: 2.5rem GothamLight;
+    text-align: left;
+}
+
+.product-top-right .qty>:nth-child(3) {
+    overflow: hidden;
+    background-color: #ECB28B;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamBold;
+}
+
+.product-top-right .button {
+    text-decoration: none;
+    background-color: #ECB28B;
+    width: 90%;
+    align-self: center;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    color: white;
+    font: 1.3rem GothamLight;
+    text-align: center;
+}
+
+.review {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.review-head {
+    margin: 2rem;
+    box-shadow: 0 0 20px gainsboro;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.review-head>p {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamLight;
+}
+
+.review-head .button {
+    background-color: #081D74;
+    margin: 0 2rem;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    font: 1rem GothamLighter;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.review-content .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.review-content .head>img {
+    width: 3%;
+    margin: 0 2rem;
+}
+
+.review-content .head>p {
+    font: 1.5rem GothamBold;
+    margin: 0;
+    align-self: center;
+    color: #081D74;
+}
+
+.review-content .content {
+   display: flex;
+   flex-direction: column;
+   background-color: #FDF7F3;
+   width: 90%;
+   margin: 0 7rem;
+}
+
+.review-content .content>h3 {
+    margin: 1rem 2rem;
+    color: #081D74;
+    font-family: GothamBold;
+}
+.review-content .content>p {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    font-family: GothamLight;
+}
+
+footer{
+    background-color: #1F253D;
+    padding: 2rem 5rem;
+}
+
+footer>span{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content>span:first-child{
+    font: 3rem GothamBold;
+    color: #ECB28B;
+}
+
+.footer-content>span:nth-child(2){
+    font: GothamLight;
+    text-align: right;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p:first-child{
+    font: 1.2rem GothamBold;
+}
+
+.footer-content>span:nth-child(2)>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p>a:hover{
+    color: #ECB28B;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+        font-size: 2rem;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+
+    .navbar-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>img{
+        width: 2rem;
+    }
+
+    .navbar-button>a>span{
+        display: none;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
+    }
+
+    .product-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .product-top>img{
+        margin: 0;
+        width: 90%;
+    }
+
+    .product-top-right {
+       margin: 0;
+       width: 90%;
+       align-items: center;
+    }
+
+    .product-top-right>p:first-child {
+        margin: 2rem;
+    }
+    
+    .product-top-right>p:nth-child(2) {
+        margin: 0 2rem;
+    }
+
+    .product-top-right .button {
+        margin: 0;
+        width: 70%;
+    }
+
+    .review-head {
+        margin: 0;
+    }
+
+    .review-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .review-content .head>img {
+        width: 8%;
+        margin: 0;
+    }
+
+    .review-content .head>p {
+        margin: 0 1rem;
+    }
+    .review-content .content {
+        width: 90%;
+        margin: 0 4rem;
+    }
+       footer{
+        padding: 2rem 1rem;
+    }
+}
