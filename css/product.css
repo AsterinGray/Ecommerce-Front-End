@@ -67,37 +67,74 @@ label[for="hamburger"], #hamburger{
 
 .product-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 3rem 0;
     width: 100%;
 }
 
 .product-top>img {
-    width: 40%;
+    margin: 0 3rem;
+    width: 50%;
     box-shadow: 0 0 20px gainsboro;
 }
 
 .product-top-right {
-    width: 40%;
+    width: 30%;
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     align-self: center;
 }
 .product-top-right>p:first-child {
-    margin: 0;
+    margin-bottom: 2rem;
     font: 3rem GothamBold;
 }
 
 .product-top-right>p:nth-child(2) {
-    margin: 0;
+    margin-bottom: 2rem;
     font: 1.5rem GothamLight;
 }
 
-.product-top-right>p:nth-child(3) {
+.product-top-right .har {
     font: 2.5rem GothamLight;
     text-align: left;
+}
+
+.product-top-right .qty {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #1F253D;
+}
+.product-top-right .qty>div:first-child {
+    overflow: hidden;
+    background-color: #ECB28B;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamBold;
+}
+
+.product-top-right .qty>div:nth-child(2) {
+    overflow: hidden;
+    box-shadow: 0 0 20px gainsboro;
+    padding: 1rem 5rem;
+    width: 20%;
+    font: 1rem GothamBold;
+}
+
+.product-top-right .qty>div:nth-child(3) {
+    overflow: hidden;
+    background-color: #ECB28B;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamBold;
+}
+
+.product-top-right .qty>:nth-child(3) {
+    overflow: hidden;
+    background-color: #ECB28B;
+    padding: 0.5rem 1rem;
+    font: 2rem GothamBold;
 }
 
 .product-top-right .button {
@@ -141,7 +178,7 @@ label[for="hamburger"], #hamburger{
     align-self: center;
     color: white;
     text-decoration: none;
-    font: 1rem GothamLighter;
+    font: 1.1rem GothamLighter;
 }
 
 .review-content {
@@ -309,11 +346,22 @@ footer>span{
     }
 
     .product-top-right>p:first-child {
-        margin: 2rem;
+        margin: 2rem 0;
     }
     
     .product-top-right>p:nth-child(2) {
         margin: 0 2rem;
+    }
+
+    .product-top-right .qty {
+        align-self: center;
+        justify-content: center;
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .product-top-right .qty>div:nth-child(2) {
+        width: 50%;
     }
 
     .product-top-right .button {
