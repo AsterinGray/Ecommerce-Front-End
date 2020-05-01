@@ -30,16 +30,22 @@
             </a>
         </span>
     </nav>
-    <section class="product-top">
+    <section class="product">
         <img src="asset/img/Product/bot.jpg" alt="product-icon">
-        <div class="product-top-right">
-            <p>Bottle</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        <div class="product-description">
+            <h1>Bottle</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Nam pariatur aliquam iusto obcaecati optio facere repellat 
                 corporis delectus aspernatur ducimus!
             </p>
-            <p>IDR 50.000,-</p>
-            <a href="" class="button">
+            <div class="product-description-qty">
+                <div class="product-description-qty-selector" onclick="minus()">-</div>
+                <div class="product-description-qty-value" id="value">1</div>
+                <div class="product-description-qty-selector" onclick="plus()">+</div>
+            </div>
+            <p>IDR <span id="price">50.000</span>,-</p>
+            <a href="">
                 Add to Cart
             </a>
         </div> 
@@ -47,12 +53,23 @@
     <section class="review">
         <div class="review-head">
             <p>Review</p>
-            <a href="" class="button">
-                Write Review
-            </a>
+            <button onclick="review()">Write Review</button>
         </div>
-        <div class="review-content">
-            <div class="head">
+        <form class="review-form">
+            <p>Write a review</p>
+            <div class="profile">
+                <img src="asset/img/Hompage/user-icon.svg" alt="person-icon">
+                <span>William Daniel</span>
+            </div>
+            <label>Review Title</label>
+            <input type="text" placeholder="Give your review a title" maxlength="25" required>
+            <label>Body of review</label>
+            <textarea cols="30" rows="5" placeholder="Write your comment here" maxlength="600" required></textarea>
+            <button type="submit">Submit Review</button>
+            <hr>
+        </form>
+        <div class="review-card">
+            <div class="profile">
                 <img src="asset/img/Hompage/user-icon.svg" alt="person-icon">
                 <p>William Daniel</p>
             </div>
@@ -70,27 +87,27 @@
                 </p>
             </div>
         </div>
-        <div class="review-content">
-                <div class="head">
-                    <img src="asset/img/Hompage/user-icon.svg" alt="person-icon">
-                    <p>William Daniel</p>
-                </div>
-                <div class="content">
-                    <h3>I Love this Bottle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua. At veros eos et 
-                        accusam et justo duo dolores et ea rebum, Stet clita kasd 
-                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
-                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod tempor invidunt ut labore et 
-                        dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                </div>
+        <div class="review-card">
+            <div class="profile">
+                <img src="asset/img/Hompage/user-icon.svg" alt="person-icon">
+                <p>William Daniel</p>
             </div>
+            <div class="content">
+                <h3>I Love this Bottle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua. At veros eos et 
+                    accusam et justo duo dolores et ea rebum, Stet clita kasd 
+                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et 
+                    dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+            </div>
+        </div>
+        <hr>
     </section>
-    <hr>
     <footer>
         <div class="footer-content">
             <span>SGuna</span>
@@ -103,5 +120,7 @@
         <hr>
         <span>&copy; E-commerce Serba Guna</span>
     </footer>
+    <script src="asset/lib/jquery.js"></script>
+    <script src="js/shop.js"></script>
 </body>
 </html>
