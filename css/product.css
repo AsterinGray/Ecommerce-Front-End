@@ -65,102 +65,90 @@ label[for="hamburger"], #hamburger{
     font-size: 2rem;
 }
 
-.product-top {
+.product {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 1rem;
-    width: 100%;
+    min-height: 90vh;
 }
 
-.product-top>img {
-    margin: 2rem;
-    width: 50%;
+.product>img {
+    margin: 0 3rem;
+    width: 40%;
     box-shadow: 0 0 20px gainsboro;
 }
 
-.product-top-right {
-    width: 30%;
-    text-align: center;
-    margin: 0 2rem;
+.product-description {
     display: flex;
     flex-direction: column;
     align-self: center;
+    width: 30%;
+    text-align: center;
+    margin: 0 2rem;
 }
-.product-top-right>p:first-child {
-    margin-bottom: 2rem;
+
+.product-description>h1 {
+    margin: 0;
     font: 3rem GothamBold;
 }
 
-.product-top-right>p:nth-child(2) {
+.product-description>p:nth-child(2) {
     margin-bottom: 2rem;
-    font: 1.5rem GothamLight;
+    font: 1.2rem GothamLight;
 }
 
-.product-top-right .har {
+.product-description>p:nth-child(4) {
     font: 2.5rem GothamLight;
     text-align: left;
 }
 
-.product-top-right .qty {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-    color: #1F253D;
-    width: 100%;
-}
-.product-top-right .qty>div:first-child {
-    overflow: hidden;
-    background-color: #ECB28B;
-    padding: 0.5rem 1rem;
-    font: 2rem GothamBold;
-}
-
-.product-top-right .qty>div:nth-child(2) {
-    overflow: hidden;
-    box-shadow: 0 0 20px gainsboro;
-    padding: 1rem 5rem;
-    font: 1rem GothamBold;
-    width: 20%;
-}
-
-.product-top-right .har{
-    font: 2.5rem GothamLight;
-    text-align: left;
-}
-
-.product-top-right .qty>:nth-child(3) {
-    overflow: hidden;
-    background-color: #ECB28B;
-    padding: 0.5rem 1rem;
-    font: 2rem GothamBold;
-}
-
-.product-top-right .button {
+.product-description>a {
     text-decoration: none;
     background-color: #ECB28B;
-    width: 90%;
+    width: 80%;
     align-self: center;
-    margin: 2rem 0;
     padding: 1rem 2rem;
     color: white;
     font: 1.3rem GothamLight;
     text-align: center;
 }
 
-.review {
-    margin: 2rem;
+.product-description-qty{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    font: 2rem GothamLight;
+    width: 100%;
+    background-color: #FDF7F3;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.product-description-qty-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.product-description-qty-selector{
+    background-color: #ECB28B;
+    font: 3rem GothamBold;
+    width: 15%;
+    cursor: pointer;
+}
+
+.review {
+    margin: 2rem 0;
+    display: flex;
     flex-direction: column;
+    padding: 0 5rem;
 }
 
 .review-head {
-    margin: 2rem;
+    margin: 2rem 0;
     box-shadow: 0 0 20px gainsboro;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
 }
 
 .review-head>p {
@@ -169,59 +157,118 @@ label[for="hamburger"], #hamburger{
     font: 2rem GothamLight;
 }
 
-.review-head .button {
+.review button {
     background-color: #081D74;
     margin: 0 2rem;
-    padding: 0.5rem 1rem;
-    overflow: hidden;
+    padding: 0.8rem 1.5rem;
     align-self: center;
     color: white;
-    text-decoration: none;
-    font: 1rem GothamLighter;
+    font: 1.2rem GothamLight;
+    border: none;
+    cursor: pointer;
 }
 
-.review-content {
+.review-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 0 3rem;
+    overflow: hidden;
+    height: 0;
 }
 
-.review-content .head {
+.review-form>p{
+    font: 1.5rem GothamLight;
+}
+
+.review-form .profile{
+    display: flex;
+    align-items: center;
+    font: 1.3rem GothamBold;
+}
+
+.review-form .profile img{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.review-form>label{
+    font: 1.2rem GothamLight;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.review-form>input, .review-form>textarea{
+    margin-top: .5rem;
+    margin-left: 3rem;
+    border: 1px solid gray;
+    padding: .5rem 1rem;
+    font: 1rem  GothamLight;
+}
+
+.review-form>input{
+    text-transform: capitalize;
+}
+
+.review-form>input:focus, .review-form>textarea:focus{
+    outline: none;
+}
+
+.review-form>button{
+    margin: 1rem 3rem;
+    align-self: flex-start;
+}
+
+.review-form>hr{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review-card .profile {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 1rem;
 }
 
-.review-content .head>img {
-    width: 3%;
-    margin: 0 2rem;
+.review-card .profile>img {
+    width: 4rem;
+    margin: 1rem;
 }
 
-.review-content .head>p {
+.review-card .profile>p {
     font: 1.5rem GothamBold;
     margin: 0;
     align-self: center;
     color: #081D74;
 }
 
-.review-content .content {
+.review-card .content {
    display: flex;
    flex-direction: column;
    background-color: #FDF7F3;
-   width: 80%;
-   margin: 0 6rem;
+   width: 90%;
+   margin-left: 6rem;
 }
 
-.review-content .content>h3 {
+.review-card .content>h3 {
     margin: 1rem 2rem;
     color: #081D74;
     font-family: GothamBold;
 }
-.review-content .content>p {
+.review-card .content>p {
     margin: 0 2rem;
     padding-bottom: 1rem;
     font-family: GothamLight;
+}
+
+.review>hr{
+    margin: 3rem 0;
 }
 
 footer{
@@ -326,72 +373,92 @@ footer>span{
         color: white;
     }
 
-    .product-top {
-        display: flex;
+    .product {
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        padding: 0 1rem;
     }
 
-    .product-top>img{
-        margin: 0;
-        width: 90%;
-    }
-
-    .product-top-right {
-       margin: 0;
-       width: 90%;
-       align-items: center;
-    }
-
-    .product-top-right>p:first-child {
-        margin: 2rem;
-    }
-    
-    .product-top-right>p:nth-child(2) {
-        margin: 0 2rem;
-    }
-
-    .product-top-right .qty {
-        align-self: center;
-        justify-content: center;
-        margin-top: 3rem;
-        width: 90%;
-    }
-
-    .product-top-right .qty>div:nth-child(2) {
-        margin: 0;
-        width: 50%;
-    }
-
-    .product-top-right .button {
-        margin: 0;
-        width: 70%;
-    }
-
-    .review-head {
-        margin: 0;
-    }
-
-    .review-content {
-        margin: 0;
-        ali
+    .product>img{
         width: 100%;
     }
 
-    .review-content .head>img {
-        width: 8%;
-        margin: 0;
+    .product-description {
+       margin: 0;
+       width: 100%;
+       align-items: center;
     }
 
-    .review-content .head>p {
-        margin: 0 1rem;
+    .product-description>h1 {
+        margin-top: 3rem;
     }
-    .review-content .content {
-        width: 90%;
-        margin: 0 3rem;
+    
+    .product-description>p {
+        width: 80%;
     }
-       footer{
+
+    .product-description-qty{
+        width: 80%;
+    }
+
+    .product-description>a{
+        width: 70%;
+    }
+
+    .review {
+        padding: 0 1rem;
+    }
+
+    .review-head>p{
+        font: 1rem GothamLight;
+        padding: .5rem 0;
+    }
+
+    .review button{
+        font: 1rem GothamLight;
+        margin: 0 .5rem;
+    }
+
+    .review-form{
+        padding: 0 1rem;
+    }
+
+    .review-form .profile{
+        display: flex;
+        align-items: center;
+        font: 1.1rem GothamBold;
+    }
+
+    .review-form>p{
+        font: 1rem GothamLight;
+    }
+
+    .review-form>label{
+        margin-left: 0;
+    }
+
+    .review-form>input, .review-form>textarea{
+        margin-left: 0;
+    }
+
+    .review-form>button{
+        margin: 1rem 0;
+        align-self: center;
+    }
+
+    .review-card .profile>img{
+        width: 2rem;
+    }
+
+    .review-card .profile>p{
+        font: 1rem GothamBold;
+    }
+
+    .review-card .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer{
         padding: 2rem 1rem;
     }
 }
