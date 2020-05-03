@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGuna</title>
+    <link rel="stylesheet" href="asset/lib/slick/slick.css">
+    <link rel="stylesheet" href="asset/lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <nav class="navbar">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">
+        <span class="navbar-logo">
+            <a href="">SGuna</a>
+        </span>
+        <span class="navbar-link">
+            <a href="shop.html">Shop</a>
+            <a href="">About</a>
+        </span>
+        <span class="navbar-button">
+            <a href="">
+                <img src="asset/img/Hompage/cart-icon.svg" alt="Cart-icon">
+                <span>Cart</span>
+            </a>
+            <a href="">
+                <img src="asset/img/Hompage/cart-icon.svg" alt="User-icon">
+                <span>Login|Regis</span>
+            </a>
+        </span>
+    </nav>
+    <section class="content">
+        <div class="cart">
+            <div class="cart-head">
+                <img src="asset/img/Hompage/cart-icon.svg" alt="cart-icon">
+                <p>Cart</p>
+            </div>
+            <div class="cart-item">
+                <img src="asset/img/Shop/2662397.jpg" alt="dummy-img">
+                <div class="cart-item-description">
+                    <h1>Bottle</h1>
+                    <p>IDR 50.000,-</p>
+                </div>
+                <div class="cart-item-qty">
+                    <div class="cart-item-qty-selector" onclick="minus()">-</div>
+                    <div class="cart-item-qty-value" id="value">1</div>
+                    <div class="cart-item-qty-selector" onclick="plus()">+</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="asset/img/Shop/2662397.jpg" alt="dummy-img">
+                <div class="cart-item-description">
+                    <h1>Bottle</h1>
+                    <p>IDR 50.000,-</p>
+                </div>
+                <div class="cart-item-qty">
+                    <div class="cart-item-qty-selector" onclick="minus()">-</div>
+                    <div class="cart-item-qty-value" id="value">1</div>
+                    <div class="cart-item-qty-selector" onclick="plus()">+</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="asset/img/Shop/2662397.jpg" alt="dummy-img">
+                <div class="cart-item-description">
+                    <h1>Bottle</h1>
+                    <p>IDR 50.000,-</p>
+                </div>
+                <div class="cart-item-qty">
+                    <div class="cart-item-qty-selector" onclick="minus()">-</div>
+                    <div class="cart-item-qty-value" id="value">1</div>
+                    <div class="cart-item-qty-selector" onclick="plus()">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <div class="checkout-head">
+                <p>Checkout</p>
+            </div>
+            <div class="checkout-content">
+                <select>
+                    <option disabled selected>Select your payment method</option>
+                    <option value="">Card</option>
+                    <option value="">Card</option>
+                    <option value="">Card</option>
+                </select>
+                <select>
+                    <option disabled selected>Select your delivery service</option>
+                    <option value="">Card</option>
+                    <option value="">Car</option>
+                    <option value="">Car</option>
+                </select>
+                <button>Checkout</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <span>SGuna</span>
+            <span>
+                <p>Do you get any question ?</p>
+                <p>Call us on Monday-Friday 10am-5pm</p>
+                <p>Regarding our product <a href="tel:+628827068245">+62 882-7068-2425</a></p>
+            </span>
+        </div>
+        <hr>
+        <span>&copy; E-commerce Serba Guna</span>
+    </footer>
+    <script src="asset/lib/jquery.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>
