@@ -291,6 +291,41 @@ footer>span{
         display: inline-block;
         color: white;
     }
+
+    .content{
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .cart{
+        width: 100%;
+    }
+
+    .cart-item{
+        padding: .5rem;
+    }
+
+    .cart-item>img{
+        width: 5rem;
+    }
+
+    .cart-item-description>h1{
+        font: 1rem GothamBold;
+    }
+
+    .cart-item-description>p{
+        font: .8rem GothamLight;
+    }
+
+    .cart-item-qty{
+        margin-right: .5rem;
+        width: 30%;
+    }
+
+    .checkout{
+        width: 100%;
+        margin: 2rem 0;
+    }
     
     footer{
         padding: 2rem 1rem;
