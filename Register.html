@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="css/Login-Register.css">
+    <link rel="stylesheet" href="css/Login-Register2.css">
 </head>
 <body>
     <nav class="navbar">
@@ -30,21 +30,29 @@
     </nav>
 
     <section class="Register">
-        <div class="Box">
-            <h1>REGISTER</h1>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Username" required>
-                <input type="email" placeholder="Email" required>
-                <input type="number" placeholder="Phone Number" required>
-                <input type="text" placeholder="Address" required>
-                <input type="text" placeholder="Date of Birth" onfocus="(this.type='date')" required>
-                <input type="password" placeholder="Password" minlength="8" required>
-                <input type="password" placeholder="Confirm Password" minlength="8" required>
-            </form>
+        <div class="Register-Box">
+            <span class="Register-Box-Content">
+                <h1>Register</h1>
+                <form>
+                    <label for="Name"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Name" size="27" value="Name" required>
+                    <label for="Emai"></label>
+                    <input type="email" class="Register-Box-Content-Item" name="Email" size="27" value="Email" required>
+                    <label for="Username"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Username" size="27" value="Username" required>
+                    <label for="Phone Number"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Phone Number" size="27" value="Phone number" required>
+                    <label for="Address"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Address" size="27" value="Address" required>
+                    <label for="Day of Birth"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Day of Birth" size="27" value="Day of Birth" required>
+                    <label for="Password"></label>
+                    <input type="text" class="Register-Box-Content-Item" name="Password" size="27" value="Password" required>
+                </form>
 
-            <p>Already have an account? <a href="">Click here</a></p>
-            <button type="submit">REGISTER</button>
+                <p>Already have an account? <a href="" class="Register-Box-Content-Button-Clikhere">Click here</a></p>
+                <span class="Register-Box-Content-Button">Register</span>
+            </span>
         </div>
     </section>
 </body>

@@ -78,7 +78,7 @@ label[for="hamburger"], #hamburger{
     display: flex;
     justify-content: center;
     background-color: #FCF7F4;
-    border-radius: 30px;
+    border-radius: 15%;
     width: 350px;
     height: 300px;
 }
@@ -128,6 +128,62 @@ label[for="hamburger"], #hamburger{
 
 .Login-Box-Content-Button-Clikhere{
     font-family: "GothamBold";
+    color: #ECB28B;
+    /* font-size: 30px; */
+}
+
+.Register{
+    font-family: "GothamBold";
+    height: 90vh;
+    background-color: #1F253D ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Register-Box{
+    display: flex;
+    justify-content: center;
+    background-color: #FCF7F4;
+    border-radius: 30px;
+    width: 350px;
+    height: 500px;
+}
+
+.Register-Box-Content{
+    text-align: center;
+    
+}
+
+.Register-Box-Content>h1{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    font-size: 30px;
+}
+
+.Register-Box-Content>p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Register-Box-Content-Item{
+    margin-top: 1rem;
+    font-size: 16px;
+    font-family: "GothamBold";
+    color: silver;
+    border: 2px solid silver;
+    padding: 3px;
+}
+
+.Register-Box-Content-Button{
+    background-color: #ECB28B;
+    border-radius: 50px;
+    
+    padding: 5px 60px;
+    font-size: 20px;
+}
+
+.Register-Box-Content-Button-Clikhere{
     color: #ECB28B;
 }
 
@@ -210,7 +266,7 @@ label[for="hamburger"], #hamburger{
         display: flex;
         justify-content: center;
         background-color: #FCF7F4;
-        border-radius: 30px;
+        border-radius: 15%;
         width: 250px;
         height: 300px;
     }
@@ -226,7 +282,6 @@ label[for="hamburger"], #hamburger{
     }
     
     .Login-Box-Content>p{
-        font-size: 10px;
         margin-top: 1rem;
         margin-bottom: 1.5rem;
     }
@@ -252,12 +307,71 @@ label[for="hamburger"], #hamburger{
     .Login-Box-Content-Button{
         background-color: #ECB28B;
         border-radius:50px;
-        padding: 5px 50px;
-        font-size: 15px;
+        padding: 5px 60px;
+        font-size: 20px;
     }
 
     .Login-Box-Content-Button-Clikhere{
         font-family: "GothamBold";
         color: #ECB28B;
-        /* font-size: 30px; */
+    }
+
+        
+        .Register{
+            font-family: "GothamBold";
+            height: 90vh;
+            background-color: #1F253D ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Register-Box{
+            display: flex;
+            justify-content: center;
+            background-color: #FCF7F4;
+            border-radius: 30px;
+            width: 300px;
+            height: 470px;
+        }
+        
+        .Register-Box-Content{
+            text-align: center;
+            
+        }
+        
+        .Register-Box-Content>h1{
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+            font-size: 30px;
+        }
+        
+        .Register-Box-Content>p{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 14px;
+        }
+        
+        .Register-Box-Content-Item{
+            margin-top: 1rem;
+            font-size: 15px;
+            font-family: "GothamBold";
+            color: silver;
+            border: 2px solid silver;
+            padding: 3px;
+        }
+        
+        .Register-Box-Content-Button{
+            background-color: #ECB28B;
+            border-radius: 50px;
+            
+            padding: 5px 60px;
+            font-size: 20px;
+        }
+        
+        .Register-Box-Content-Button-Clikhere{
+            font-size: 14px;
+            color: #ECB28B;
+        }
 }
+
+    

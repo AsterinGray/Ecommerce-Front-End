@@ -31,14 +31,19 @@
 
 
     <section class="Login">
-        <div class="Box">
-            <h1>LOGIN</h1>
-            <form>
-                <input type="text" placeholder="Username" required>
-                <input type="text"minlength="8" placeholder="Password" required><br>
-            </form>
-            <p>Don't have any account yet? <a href="">click here</a></p>
-            <button type="submit">LOGIN</button>
+        <div class="Login-Box">
+            <span class="Login-Box-Content">
+                <h1>LOGIN</h1>
+                <form>
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" size="20" value="Username" required><br>
+                    <label for="password"></label>
+                    <input type="text" id="password" name="password" size="20" minlength="8" value="Password" required><br>
+                </form>
+
+                <p>Don't have any account yet? <a href="" class="Login-Box-Content-Button-Clikhere">click here</a></p>
+                <span class="Login-Box-Content-Button">Login</span>
+            </span>
         </div>
     </div>
 </section>
