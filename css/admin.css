@@ -1,0 +1,271 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+
+.navbar-button{
+    margin-left: auto;
+}
+
+.navbar-button a{
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-button>a>img{
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+.admin {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 5rem;
+}
+.table-content {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+
+.table-content tr{
+    box-shadow: 0 0 10px gainsboro;
+    border-spacing: 0 1rem;
+}
+
+.table-content tr th {
+    background-color: #ECB28B;
+    font: 1rem GothamBold;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.table-content>tr>td {
+    font: 1rem GothamLight;
+}
+
+.table-content .name {
+    font: 1rem GothamBold;
+}
+
+.table-content th, td {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.table-content img {
+    width: 10rem;
+    text-align: center;
+}
+
+.table-content p {
+    text-align: left;
+}
+
+.table-content button {
+    border: none;
+    color: white;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .2rem .5rem;
+    cursor: pointer;
+}
+
+.table-content .del {
+    background-color: #743908;
+}
+
+.table-content .edit {
+    background-color: #081D74;
+}
+
+.add {
+    width: 20%;
+    font: 1rem GothamBold;
+    margin: 1rem 2rem;
+}
+
+.add-head {
+    padding: 0.5rem 1rem;
+    background-color: #081D74;
+    color: white;
+    width: 100%;
+}
+
+.add-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    box-shadow: 0 0 10px gainsboro;
+    background-color: #FCF7F4;
+}
+
+.add-content>input, .add-content>textarea {
+    font: 1rem GothamLight;
+    margin: .5rem 1rem;
+    width: 100%;
+}
+
+label[for=image]{
+    text-align: center;
+    cursor: pointer;
+}
+
+label[for=image] img{
+    width: 100%;
+}
+
+#image{
+    display: none;
+}
+
+.add-content .item {
+    background-color: #081D74;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+        font-size: 2rem;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+
+    .navbar-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>img{
+        width: 2rem;
+    }
+
+    .navbar-button>a>span{
+        display: none;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
+    }
+
+    .admin{
+        flex-direction: column;
+        padding: 3rem 1rem;
+        width: 100%;
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .table-content{
+        width: 100%;
+    }
+
+    .table-content th, td {
+        padding: .5rem 1rem;
+    }
+
+    .table-content img{
+        width: 5rem;
+    }
+
+    .add{
+        width: 100%;
+    }
+}
