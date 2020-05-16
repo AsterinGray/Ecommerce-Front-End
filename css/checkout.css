@@ -1,0 +1,333 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+
+.navbar-button{
+    margin-left: auto;
+}
+
+.navbar-button a{
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-button>a>img{
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+.content{
+    display: flex;
+    padding: 3rem 5rem;
+}
+
+.cart{
+    width: 65%;
+}
+
+.cart-head{
+    display: flex;
+    align-content: center;
+    padding: .5rem 2rem;
+    box-shadow: 0px 0px 10px gainsboro;
+    background-color: #ECB28B;
+    color: white;
+    font: 1.5rem GothamBold;
+}
+
+.cart-head>img{
+    width: 2rem;
+    filter: brightness(0) invert(1);
+}
+
+.cart-head>p{
+    margin: .5rem;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.cart-item>img{
+    width: 10rem;
+}
+
+.cart-item-description>h1{
+    font: 2rem GothamBold;
+    margin: .5rem 0;
+}
+
+.cart-item-description>p{
+    font: 1.5rem GothamLight;
+    margin: 0;
+}
+
+.cart-item-qty{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    font: 1.2rem GothamLight;
+    width: 25%;
+    background-color: #FDF7F3;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.cart-item-qty-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-item-qty-selector{
+    display: flex;
+    justify-content: center;
+    background-color: #ECB28B;
+    font: 1.5rem GothamBold;
+    width: 15%;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.checkout{
+    width: 30%;
+    margin-left: auto;
+}
+
+.checkout-head{
+    background-color: #1F253D;
+    color: white;
+    display: flex;
+    align-content: center;
+    font: 1.5rem GothamBold;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.checkout-head>p{
+    margin: 0;
+}
+
+.checkout-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    margin: .5rem 0;
+    background-color: #FDF7F3;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.checkout-content>select{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    font: 1rem GothamLight;
+}
+
+.checkout-content>button{
+    border: none;
+    background-color: #1F253D;
+    font: 1.5rem GothamLight;
+    color: white;
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+    border-radius: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+footer{
+    background-color: #1F253D;
+    padding: 2rem 5rem;
+}
+
+footer>span{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content>span:first-child{
+    font: 3rem GothamBold;
+    color: #ECB28B;
+}
+
+.footer-content>span:nth-child(2){
+    font: GothamLight;
+    text-align: right;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p:first-child{
+    font: 1.2rem GothamBold;
+}
+
+.footer-content>span:nth-child(2)>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p>a:hover{
+    color: #ECB28B;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+        font-size: 2rem;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+
+    .navbar-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>img{
+        width: 2rem;
+    }
+
+    .navbar-button>a>span{
+        display: none;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
+    }
+
+    .content{
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .cart{
+        width: 100%;
+    }
+
+    .cart-item{
+        padding: .5rem;
+    }
+
+    .cart-item>img{
+        width: 5rem;
+    }
+
+    .cart-item-description>h1{
+        font: 1rem GothamBold;
+    }
+
+    .cart-item-description>p{
+        font: .8rem GothamLight;
+    }
+
+    .cart-item-qty{
+        margin-right: .5rem;
+        width: 30%;
+    }
+
+    .checkout{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    footer{
+        padding: 2rem 1rem;
+    }
+}
