@@ -113,28 +113,35 @@ label[for="hamburger"], #hamburger{
     text-align: center;
 }
 
-.product-description-qty{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: 2rem GothamLight;
-    width: 100%;
-    background-color: #FDF7F3;
+.product-description-qty>input{
+    box-sizing: border-box;
+    text-align: center;
     box-shadow: 0 0 10px gainsboro;
+    width: 70%;
+    height: 3rem;
+    border: none;
+    font: 1.5rem GothamLight;
 }
 
-.product-description-qty-value{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.product-description-qty>input:focus{
+    outline: none;
 }
 
-.product-description-qty-selector{
+.product-description-qty>input::-webkit-outer-spin-button,
+.product-description-qty>input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.product-description-qty>input[type="button"]{
+    font: 1.5rem GothamBold;
     background-color: #ECB28B;
-    font: 3rem GothamBold;
-    width: 15%;
+    border: solid #ECB28B;
+    width: 3rem;
     cursor: pointer;
+}
+
+.product-description-qty>input[type="button"]:focus{
+    background-color: rgb(207, 151, 114);
 }
 
 .review {
