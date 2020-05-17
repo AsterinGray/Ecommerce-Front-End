@@ -1,0 +1,271 @@
+/* html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
+
+@font-face{
+    font-family: "GothamLight";
+    src: url("../asset/font/GothamLight.ttf");
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url("../asset/font/GothamBold.ttf");
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "GothamBold";
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1F253D;
+    padding: 0 5rem;
+    font: 1.5rem GothamBold;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    color: #ECB28B;
+    font-weight: bolder;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    color: white;
+}
+
+.navbar-link>a{
+    padding: 0 1rem;
+    color: white;
+}
+
+
+.navbar-button{
+    margin-left: auto;
+}
+
+.navbar-button a{
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-button>a>img{
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+label[for="hamburger"], #hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+footer{
+    background-color: #1F253D;
+    padding: 2rem 5rem;
+}
+
+footer>span{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content>span:first-child{
+    font: 3rem GothamBold;
+    color: #ECB28B;
+}
+
+.footer-content>span:nth-child(2){
+    font: GothamLight;
+    text-align: right;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p:first-child{
+    font: 1.2rem GothamBold;
+}
+
+.footer-content>span:nth-child(2)>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content>span:nth-child(2)>p>a:hover{
+    color: #ECB28B;
+}
+
+.Judul{
+    color: #ECB28B;
+    font-weight: bolder;
+    font-size: 75px;
+    height: 20vh;
+    text-align: center;
+}
+
+.Content{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.Content-Picture{
+    width: 400px;
+    margin-left: 5rem;
+}
+
+.Content-Def{
+    width: 600px;
+    text-align: center;
+}
+
+.Content-Def-Judul{
+    color: #ECB28B;
+    font-size: 40px;
+}
+
+.Content-Def-Keterangan{
+    margin-top: 2rem;
+   font-size: 26px;
+   margin-left: 2rem;
+}
+
+#Content-Def-2{
+    margin-top: 5rem;
+}
+
+#Content-Def-3{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+#Content-Last{
+    margin-bottom: 4rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+        justify-content: space-between;
+        background-color: #ECB28B;
+        font-size: 2rem;
+    }
+
+    .navbar-logo>a{
+        color:white;
+    }
+
+    .navbar-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-button>a{
+        padding: .2rem;
+        margin: 0;
+    }
+
+    .navbar-button>a>img{
+        width: 2rem;
+    }
+
+    .navbar-button>a>span{
+        display: none;
+    }
+
+    .navbar input:checked ~ .navbar-link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ECB28B;
+        top: 0;
+        left: 0;
+        margin-top: 10vh;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .navbar>input:checked.navbar{
+        background-color: #ECB28B;
+    }
+
+    .navbar-link{
+        display: none;
+        height: 0;
+        transition: 1s ease;
+    }
+
+    .navbar-link>a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    label[for="hamburger"]{
+        display: inline-block;
+        color: white;
+    }
+
+    footer{
+        padding: 2rem 1rem;
+    }
+
+    .Judul{
+        font-size: 77px;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    .Content{
+        /* border: 3px solid springgreen; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .Content-Picture{
+        width: 230px;
+        margin-right: 4rem;
+    }
+
+    .Content-Def-Judul{
+        font-size: 25px;
+    }
+
+    .Content-Def-Keterangan{
+        /* border: 3px solid springgreen; */
+        text-align: center;
+        width: 350px;
+        /* height: 100px; */
+        font-size: 15px;
+        margin-left: 8rem;
+    }
+
+    #Content-2{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #Content-Last{
+        margin-bottom: 2rem;
+    }
+}
