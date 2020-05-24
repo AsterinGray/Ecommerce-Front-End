@@ -35,18 +35,19 @@
             <h1>REGISTER</h1>
             <form>
                 <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Username" required minlength="5" maxlength="16">
                 <input type="email" placeholder="Email" required>
                 <input type="number" placeholder="Phone Number" required>
                 <input type="text" placeholder="Address" required>
                 <input type="text" placeholder="Date of Birth" onfocus="(this.type='date')" required>
-                <input type="password" placeholder="Password" minlength="8" required>
-                <input type="password" placeholder="Confirm Password" minlength="8" required>
+                <input type="password" id="password" placeholder="Password" onchange="regex()" minlength="8" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" onchange="validate()" minlength="8" required>
+                <p>Already have an account? <a href="Login.html">Click here</a></p>
+                <button type="submit">REGISTER</button>
             </form>
-
-            <p>Already have an account? <a href="Login.html">Click here</a></p>
-            <button type="submit">REGISTER</button>
         </div>
     </section>
+    <script src="asset/lib/jquery.js"></script>
+    <script src="js/regis.js"></script>
 </body>
 </html>

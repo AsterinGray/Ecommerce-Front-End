@@ -24,11 +24,11 @@
     font-size: 30px;
 }
 
-.Box>p{
+.Box p{
     margin: 1rem 0;
 }
 
-.Box>button{
+.Box button{
     color: white;
     background-color: #ECB28B;
     border-radius: 50px;
@@ -44,7 +44,7 @@
     opacity: .8;
 }
 
-.Box>p>a{
+.Box a{
     font-family: "GothamBold";
     color: #ECB28B;
     text-decoration: none;
