@@ -1,24 +1,30 @@
 .Judul{
     color: #ECB28B;
     font-weight: bolder;
-    font-size: 75px;
-    height: 20vh;
+    font-size: 5rem;
     text-align: center;
+}
+
+.content-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 8rem;
 }
 
 .Content{
     display: flex;
-    justify-content: center;
-    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 5rem;
 }
 
 .Content-Picture{
-    width: 400px;
-    margin-left: 5rem;
+    width: 30%;
 }
 
 .Content-Def{
-    width: 600px;
+    width: 50%;
     text-align: center;
 }
 
@@ -29,33 +35,24 @@
 
 .Content-Def-Keterangan{
     margin-top: 2rem;
-   font-size: 26px;
-   margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
-#Content-Def-2{
-    margin-top: 5rem;
-}
-
-#Content-Def-3{
-    margin-top: 3rem;
-    margin-left: 1rem;
-}
-
-#Content-Last{
-    margin-bottom: 4rem;
+.content-2{
+    background-color: #FCF7F4;
 }
 
 
 @media only screen and (max-width: 768px){
     .Judul{
-        font-size: 77px;
-        margin-top: 3rem;
         margin-bottom: 0rem;
     }
 
+    .content-area{
+        justify-content: center;
+    }
+
     .Content{
-        /* border: 3px solid springgreen; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,7 +63,10 @@
 
     .Content-Picture{
         width: 230px;
-        margin-right: 4rem;
+    }
+
+    .Content-Def{
+        width: 100%;
     }
 
     .Content-Def-Judul{
@@ -74,21 +74,12 @@
     }
 
     .Content-Def-Keterangan{
-        /* border: 3px solid springgreen; */
         text-align: center;
-        width: 350px;
-        /* height: 100px; */
-        font-size: 15px;
-        margin-left: 8rem;
+        font-size: 1rem;
     }
 
-    #Content-2{
+    .content-2{
         display: flex;
         flex-direction: column-reverse;
-
-    }
-
-    #Content-Last{
-        margin-bottom: 2rem;
     }
 }
