@@ -39,6 +39,11 @@
     margin-top: 1rem;
 }
 
+.Box>button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
 .Box>p>a{
     font-family: "GothamBold";
     color: #ECB28B;
@@ -51,10 +56,21 @@
     height: fit-content;
 }
 
-.Box>form>input{
+.input-box>input{
+    width: 80%;
+}
+
+.Box input{
     height: 1.5rem;
     margin: .5rem 0;
     padding: .3rem .5rem;
+    border: none;
+    background-color: #FCF7F4;
+    border-bottom: 3px solid #ECB28B;
+}
+
+.Box input:focus{
+    outline: none;
 }
 
 @media only screen and (max-width: 768px){
